@@ -4,6 +4,10 @@
     border: 0;
 }
 
+button{
+    cursor: pointer;
+}
+
 header{
     height: 10%;
     width: 100%;
