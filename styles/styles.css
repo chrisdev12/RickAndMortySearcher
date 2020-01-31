@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+header{
+    height: 10%;
+    width: 100%;
+    background-color: #272343;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5rem;
+    align-items: center;
+    color: whitesmoke;   
+}
+
+
+
+h1{
+    font-size: 1.3rem;
+    width: 10%;
+    font-weight: 400;
+}
+
+nav{
+    width: 70%;
+    text-align: center;
+}
+
+input{
+    border: none;
+    width: 50%;
+    height: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.btn-buscar{
+   background:rgb(214, 13, 80);
+   width: 20%;
+   height: 1.5rem;
+   color: white;
+}
+
+
+@media screen and (min-width: 550px){
+    h1{
+        font-size: 1.5rem;
+        width: 20%;
+        font-weight: 400;
+    }
+
+    nav{
+        width: 60%;
+    }
+
+    input{
+        width: 50%;
+        height: 2rem;
+    }
+
+    .btn-buscar{
+    width: 15%;
+    height: 2rem;
+
+    }
+}
+
+
+.counter{
+    margin:1rem;
+}
+
+h2{
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+
+
+/*CONTENEDOR GENERAL*/
+
+#contenedor{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    grid-gap: 1rem;
+    padding: 3rem;
+}
+
+@media screen and (min-width: 550px) {
+    
+    #contenedor{
+        
+        grid-template-columns: repeat(2,1fr);
+
+    }
+}
+
+
+@media screen and (min-width: 850px) {
+    
+     #contenedor{
+          grid-template-columns: repeat(3,1fr);
+     }
+
+}
+
+/*Tarjetas de cada personaje */
+
+.personaje{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #f6f9fc;
+    border-radius: 10px;
+    justify-content: space-between;
+    border: 2px solid rgb(214, 13, 80);
+}
+
+.personaje img{
+    max-width: 100%;
+}
+
+.name{
+    text-align: center;
+    color: #393e46;
+    font-size: 1.5rem;
+    font-weight: 400;
+    border-bottom: 1px solid rgb(214, 13, 80);
+}
+
+.details{
+    font-size: 1rem;
+    margin: 0 1rem 0.6rem 1rem;
+}
+.species{
+    margin: 1rem 1rem 0.6rem 1rem;
+    text-align: right;
+    font-size: 1.1rem;
+}
+
+
+
