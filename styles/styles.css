@@ -22,14 +22,22 @@ header{
 
 
 h1{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     width: 10%;
     font-weight: 400;
 }
 
+@media screen and (max-width: 420px){
+    h1{
+        font-size: 0.9rem;
+    }
+}
+
+
 nav{
     width: 70%;
     text-align: center;
+    margin-left: 1rem;
 }
 
 input{
@@ -82,6 +90,23 @@ h2{
 }
 
 
+/* BOTONES PRINCIPALES DE NEVEGACIÓN Y 
+TABLERO DE RESULTADOS ENCONTRADOS */
+
+.interfaceBoard{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.interfaceBoard button{
+    width: 3rem;
+    height: 2rem;
+    background-color: #12cad6;
+}
 
 /*CONTENEDOR GENERAL*/
 
@@ -146,5 +171,21 @@ h2{
     font-size: 1.1rem;
 }
 
+footer{
+    height: 3rem;
+    display: flex;
+    background-color: rgb(214, 13, 80);
+    color: whitesmoke;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
 
+footer p a{
+    text-decoration: none;
+    color: whitesmoke;
+}
 
+footer p a:hover{
+    color: #12cad6;
+}

@@ -3,7 +3,6 @@ let valorBuscar = document.querySelector("#buscador");
 let buscar = document.querySelector("#buscar");
 let reset = document.querySelector("#reset");
 let counter = document.querySelector('.counter');
-// let pagination = document.querySelector('#pagination');
 let pagesButton = document.querySelectorAll('.pages-btn');
 const defaultUrl = 'https://rickandmortyapi.com/api/'
 var contadorDePagina = 1;
@@ -64,7 +63,7 @@ function defaultView() {
                     <p class="details"> Origin: ${personaje.origin.name}</p></div>`
                 })
                 counter.innerHTML = `<h2 class="results"> 
-                 Search your favorite Rick&Morty character by their name </h2> `;
+                 Rick&Morty characters </h2> `;
             },
             error: function (error) {
                 console.error('Error trayendo personajes ', error)
